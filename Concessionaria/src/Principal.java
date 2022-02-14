@@ -13,9 +13,9 @@ public class Principal {
     private static ArrayList<Veiculo> veiculos = new ArrayList();
     private static ArrayList<Venda> vendas = new ArrayList();
     //Criação dos arquivos
-    private static File fileFuncionarios = new File("C:/Users/TdiniF/Documents/NetBeansProjects/Concessionaria/Funcionarios.txt");
-    private static File fileVeiculos = new File("C:/Users/TdiniF/Documents/NetBeansProjects/Concessionaria/Veiculos.txt");
-    private static File fileVendas = new File("C:/Users/TdiniF/Documents/NetBeansProjects/Concessionaria/Vendas.txt");
+    private static File fileFuncionarios = new File("C:/Users/thiag/Documents/GitHub/Concessionaria/Concessionaria/Funcionarios.txt");
+    private static File fileVeiculos = new File("C:/Users/thiag/Documents/GitHub/Concessionaria/Concessionaria/Veiculos.txt");
+    private static File fileVendas = new File("C:/Users/thiag/Documents/GitHub/Concessionaria/Concessionaria/Vendas.txt");
 
     //Metodo que preenche contato 
     private static Contato setContato(String qual) {

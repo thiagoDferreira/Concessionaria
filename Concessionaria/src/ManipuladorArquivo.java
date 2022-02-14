@@ -9,7 +9,7 @@ import java.util.ArrayList;
 public class ManipuladorArquivo {
     public static ArrayList<Funcionario> leitorFuncionarios() throws IOException, CpfException, CnpjException{
         //leitor de funcionarios
-        BufferedReader buffRead = new BufferedReader(new FileReader("C:/Users/TdiniF/Documents/NetBeansProjects/Concessionaria/Funcionarios.txt"));
+        BufferedReader buffRead = new BufferedReader(new FileReader("C:/Users/thiag/Documents/GitHub/Concessionaria/Concessionaria/Funcionarios.txt"));
         ArrayList<Funcionario> funcionarios = new ArrayList();
         String linha;
         while ((linha = buffRead.readLine()) != null) {
@@ -28,7 +28,7 @@ public class ManipuladorArquivo {
     
     public static ArrayList<Veiculo> leitorVeiculos() throws IOException{
         //leitor de funcionarios
-        BufferedReader buffRead = new BufferedReader(new FileReader("C:/Users/TdiniF/Documents/NetBeansProjects/Concessionaria/Veiculos.txt"));
+        BufferedReader buffRead = new BufferedReader(new FileReader("C:/Users/thiag/Documents/GitHub/Concessionaria/Concessionaria/Veiculos.txt"));
         ArrayList<Veiculo> veiculos = new ArrayList();
         String linha;
         while ((linha = buffRead.readLine()) != null) {
@@ -74,7 +74,7 @@ public class ManipuladorArquivo {
     */
     public static void escritorFuncionarios(ArrayList <Funcionario> funcionarios) throws IOException,NullPointerException {
         //Escreve os funcionarios
-        BufferedWriter funcionario = new BufferedWriter(new FileWriter("C:/Users/TdiniF/Documents/NetBeansProjects/Concessionaria/Funcionarios.txt"));
+        BufferedWriter funcionario = new BufferedWriter(new FileWriter("C:/Users/thiag/Documents/GitHub/Concessionaria/Concessionaria/Funcionarios.txt"));
         String escreve = "";
         for (Funcionario a : funcionarios) {
             try{
@@ -89,7 +89,7 @@ public class ManipuladorArquivo {
     }    
     public static void escritorVeiculos(ArrayList <Veiculo> veiculos) throws IOException{
         //Escreve os Veiculos
-        BufferedWriter veiculo = new BufferedWriter(new FileWriter("C:/Users/TdiniF/Documents/NetBeansProjects/Concessionaria/Veiculos.txt"));
+        BufferedWriter veiculo = new BufferedWriter(new FileWriter("C:/Users/thiag/Documents/GitHub/Concessionaria/Concessionaria/Veiculos.txt"));
         for (Veiculo a : veiculos) {
             String escreve = a.getMarca()+";"+a.getModelo()+";"+a.getEspecificacoes()+";"+a.getEstoque()+";"+a.getClasse()+";"+a.getPreco()+"\n";
             veiculo.append(escreve);
@@ -99,7 +99,7 @@ public class ManipuladorArquivo {
     
     public static void escritorVendas(ArrayList <Venda> vendas) throws IOException{
         //Escreve as vendas
-        BufferedWriter venda = new BufferedWriter(new FileWriter("C:/Users/TdiniF/Documents/NetBeansProjects/Concessionaria/Vendas.txt"));
+        BufferedWriter venda = new BufferedWriter(new FileWriter("C:/Users/thiag/Documents/GitHub/Concessionaria/Concessionaria/Vendas.txt"));
         for (Venda a : vendas) {
             String escreve = a.getFuncionario().getNome()+ ";" + a.getFuncionario().getCpf() +";" + a.getFuncionario().getCargo() + ";" + a.getFuncionario().getContato().getNumero() +";" + a.getFuncionario().getContato().getEmail() + ";" + a.getFuncionario().getEndereco().getEstado() + ";" + a.getFuncionario().getEndereco().getCidade() + ";" + a.getFuncionario().getEndereco().getBairro() + ";" + a.getFuncionario().getEndereco().getRua() + ";" + a.getFuncionario().getEndereco().getNumero() +";"+ a.getFuncionario().getSalario()+";"+a.getVeiculo().getMarca()+";"+a.getVeiculo().getModelo()+";"+a.getVeiculo().getEspecificacoes()+";"+a.getVeiculo().getEstoque()+";"+a.getVeiculo().getClasse()+";"+a.getVeiculo().getPreco()+";";
             if(a.getPessoaFisica().getNome()!=null){
