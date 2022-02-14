@@ -1,0 +1,2 @@
+Fiat;Uno;Completo;1;A;30000.0
+Uno;Uno;Completo;1;A;30000.0

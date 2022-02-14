@@ -1,0 +1,1 @@
+Thiago;12312312312;gerente;12321123;email;pb;cidade;rua;bairro;123;914.0;Fiat;Uno;Completo;1;A;30000.0;Fabio;12345678910;12345678:fabinho123@hotmail.com;44441111;PB;patos;salguadin;princesa;123;Thu Dec 05 10:30:02 BRST 2019;30000.0;0.3;39000.0
